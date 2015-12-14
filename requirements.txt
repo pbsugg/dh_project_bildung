@@ -1,8 +1,13 @@
 Pseudo for the first version of a DH NLP Project on Bildung
 
- also TD: paragraph research question
+ also TD: paragraph research statement
 
- create sample interface
+
+sample texts are random snippets (with references to Bildung sprinkled throughout) from Humboldt's "Briefe an eine Freundin"
+http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=21801
+
+
+ create sample texts
  assumptions:
  1) Organized by year
      3) Structured by:
@@ -16,17 +21,15 @@ Pseudo for the first version of a DH NLP Project on Bildung
      tokenize
          downcase
          remove stop-words
-         other "cleaning"
+         other cleaning
      create a "sliding window"
      FOR each word,
          look 15 words ahead
-         IF that word contains "bildung" (going to be capturing variants as well)
+         IF that word contains "bildung" (will capture variants as well)
          get the words before, words after
          (deal w/ case of first, last 15 words as well)
- params to write:
+ params to write to CSV:
      year
      page
      context of occurrence
      links
-
- export results to CSV
