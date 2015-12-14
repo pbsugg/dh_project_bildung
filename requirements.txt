@@ -1,0 +1,32 @@
+Pseudo for the first version of a DH NLP Project on Bildung
+
+ also TD: paragraph research question
+
+ create sample interface
+ assumptions:
+ 1) Organized by year
+     3) Structured by:
+          volume (in zip file)
+          page
+
+ open( unicode)
+
+ unzip,open each page, read the file (at the page level)
+     at the page level:
+     tokenize
+         downcase
+         remove stop-words
+         other "cleaning"
+     create a "sliding window"
+     FOR each word,
+         look 15 words ahead
+         IF that word contains "bildung" (going to be capturing variants as well)
+         get the words before, words after
+         (deal w/ case of first, last 15 words as well)
+ params to write:
+     year
+     page
+     context of occurrence
+     links
+
+ export results to CSV
