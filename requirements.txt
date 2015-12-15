@@ -1,7 +1,5 @@
 Pseudo for the first version of a DH NLP Project on Bildung
 
- also TD: paragraph research statement
-
 
 sample texts are random snippets (with references to Bildung sprinkled throughout) from Humboldt's "Briefe an eine Freundin"
 http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=21801
