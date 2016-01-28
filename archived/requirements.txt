@@ -1,0 +1,32 @@
+Pseudo for the first version of a DH NLP Project on Bildung
+
+
+sample texts are random snippets (with references to Bildung sprinkled throughout) from Humboldt's "Briefe an eine Freundin"
+http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=21801
+
+
+ create sample texts
+ assumptions:
+ 1) Organized by year
+     3) Structured by:
+          volume (in zip file)
+          page
+
+ open( unicode)
+
+ unzip,open each page, read the file (at the page level)
+     at the page level:
+     tokenize
+         downcase
+         remove stop-words
+         other cleaning
+     create a "sliding window"
+     FOR each word,
+         IF that word contains "bildung" (will capture variants as well)
+         get the 15 words before, 15 words after
+         (deal w/ case of first, last 15 words as well)
+ params to write to CSV:
+     year
+     page
+     context of occurrence
+     links
